@@ -5,8 +5,8 @@ Takes two different language versions of the same manga/comic. Transforms (offse
 # Usage
 
 ```
-usage: Manga Aligner [-h] --original ORIGINAL --translation TRANSLATION --out OUT [--crop-orig CROP_ORIG] [--crop-transl CROP_TRANSL] [--split-orig SPLIT_ORIG]
-                     [--split-transl SPLIT_TRANSL] [--dir-orig DIR_ORIG] [--dir-transl DIR_TRANSL] [--match-threshold MATCH_THRESHOLD] [--overlay OVERLAY]
+usage: Manga Aligner [-h] --original ORIGINAL --translation TRANSLATION --out OUT [--crop-orig CROP_ORIG] [--crop-transl CROP_TRANSL] [--split-orig SPLIT_ORIG] [--split-transl SPLIT_TRANSL]
+                     [--dir-orig DIR_ORIG] [--dir-transl DIR_TRANSL] [--overlay OVERLAY] [--downscale DOWNSCALE]
 
 Align the pages of versions of manga in different languages, to allow easy crosschecking while reading in a foreign language.
 
@@ -27,15 +27,12 @@ optional arguments:
   --dir-orig DIR_ORIG   reading direction in the original (rl: right-to-left / lr: left-to-right; default rl)
   --dir-transl DIR_TRANSL
                         reading direction in the translation (rl: right-to-left / lr: left-to-right; default rl)
-  --match-threshold MATCH_THRESHOLD
-                        threshold score for matching pages (default 1150)
   --overlay OVERLAY     output overlaid versions for debugging (y/n, default no)
+  --downscale DOWNSCALE
+                        reduce resolution to this many pixels on single pages (default: 2000000, -1 for no resize)
 ```
 
 # TODO
 
 - handle other formats (, cbz, cbr, cbt, TODO)
 - demonstration images/movie in README
-- optimization (downscaling, better cropping, etc.)
-- correctness (threshold, allowed transformations),
-- testing
