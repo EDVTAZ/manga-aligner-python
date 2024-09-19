@@ -2,6 +2,8 @@
 
 Takes two different language versions of the same manga/comic. Transforms (offset, zoom, etc) one of the versions, so the pages from the two different versions line up perfectly. This allows reading one page in a foreign language then crosschecking your understanding by reading the same in translation and then moving on to the next one. Alignment ensures that the images don't jump around and pages stay in sync.
 
+Also see the web based verson at https://github.com/EDVTAZ/MLMR
+
 # Usage
 
 ```
